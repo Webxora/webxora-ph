@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import ContactUsSection from "@/components/home/ContactUsSection";
 import HeroSection from "@/components/home/HeroSection";
 import OurWorksSection from "@/components/home/OurWorksSection";
@@ -10,6 +11,7 @@ import React from "react";
 export default function Home() {
   return (
     <React.Fragment>
+      <Header />
       <HeroSection />
       <WhyChooseUsSection />
       <OurWorksSection />

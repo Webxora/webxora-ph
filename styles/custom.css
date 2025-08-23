@@ -17,6 +17,15 @@ body {
 /**
 * Border styles
 */
+.border-gradient {
+    border: 1px solid transparent;
+    padding: 0px;
+    border-radius: 50px;
+    background: linear-gradient(#09022D, #09022D) padding-box, linear-gradient(to top, #FB82FF, #00BBFF) border-box;
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+}
+
 .border-gradient-1 {
     border: 0px solid transparent;
     padding: 0px;

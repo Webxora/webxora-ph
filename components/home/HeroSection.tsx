@@ -22,7 +22,6 @@ export default function HeroSection() {
         <React.Fragment>
             <section className="min-h-screen bg-[url('/images/grid.png')] bg-contain relative">
                 <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(3,0,25,0.7),rgba(37,124,255,0.5),rgba(3,0,25,0.7))]" />
-
                 <div className="absolute inset-0 flex justify-center items-center z-0">
                     <Image
                         src="/images/shades/moon.png"
@@ -32,7 +31,6 @@ export default function HeroSection() {
                         className="h-auto object-cover"
                     />
                 </div>
-
                 <div className="absolute inset-0 flex flex-col justify-center items-center">
                     <div className="max-w-[1440px] w-full h-full flex flex-col justify-center items-center space-y-14">
                         <div className="bg-gradient-to-t from-[#006D9C] to-[#0E204F] border border-[#3399FF] rounded-full h-[38px] w-[199px] flex items-center justify-center">
@@ -47,12 +45,11 @@ export default function HeroSection() {
                                 />
                                 <p className="text-[10px] text-white">
                                     Powered by
-                                    <span className="text-[#00EEFF]">AI Automation</span>
+                                    <span className="text-[#00EEFF] ml-1">AI Automation</span>
                                 </p>
                             </div>
                             <div></div>
                         </div>
-
                         <div className="relative w-full flex justify-center items-center">
                             <Image
                                 src="/images/capture.png"
@@ -65,18 +62,18 @@ export default function HeroSection() {
                                 <div className="flex space-x-2">
                                     <span className="text-[#00EEFF] drop-shadow-xl">Your</span>
                                     <div className="relative">
-                                        <span className="text-white drop-shadow-[0_0_20px_#FFFFFF]">Digital Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_40px_#FFFFFF]">Digital Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_60px_#fff]">Digital Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_80px_#fff]">Digital Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_100px_#fff]">Digital Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_120px_#fff]">Digital Future</span>
+                                        <span className="text-white drop-shadow-[0_0_10px_#FFFFFF]">Digital Future</span>
+                                        <span className="absolute left-0 text-white drop-shadow-[0_0_20px_#FFFFFF]">Digital Future</span>
+                                        <span className="absolute left-0 text-white drop-shadow-[0_0_30px_#fff]">Digital Future</span>
+                                        <span className="absolute left-0 text-white drop-shadow-[0_0_140px_#fff]">Digital Future</span>
+                                        <span className="absolute left-0 text-white drop-shadow-[0_0_160px_#fff]">Digital Future</span>
+                                        <span className="absolute left-0 text-white drop-shadow-[0_0_180px_#fff]">Digital Future</span>
+                                        <span className="absolute left-0 text-white drop-shadow-[0_0_200px_#fff]">Digital Future</span>
                                     </div>
                                 </div>
                                 <span className="text-[#E398FF] drop-shadow-xl">Starts Here</span>
                             </div>
                         </div>
-
                         <div className="flex space-x-7 pt-14">
                             <Button
                                 className="h-[44px] w-[180px] rounded-full text-white"
@@ -95,7 +92,6 @@ export default function HeroSection() {
                     </div>
                 </div>
             </section>
-
             <section className="pt-32 space-y-2">
                 <h3 className="text-white text-[14px] text-center">The One Who Trust Our Bold Work</h3>
                 <div className="flex justify-center">

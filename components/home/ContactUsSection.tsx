@@ -64,8 +64,8 @@ export default function ContactUsSection() {
                 <section className="relative min-h-screen">
                     <div className={`absolute inset-0 bg-[url('/images/stars.png')] bg-contain bg-top brightness-[0.7] contrast-[1.3]`} />
                     <div className="absolute w-full bottom-0 h-[531.08px] bg-gradient-to-t from-[#08237E] to-[#00151F]/1" />
-                    <div className="absolute inset-0">
-                        <div className="min-h-screen flex items-center justify-center">
+                    <div className="absolute inset-0 ">
+                        <div className="min-h-screen flex items-center justify-center ">
                             <div className="flex flex-col text-white text-center space-y-7">
                                 <h1 className="font-medium text-[96px] font-poppins">Let’s Work Together</h1>
                                 <p className="text-[15px] text-center">
@@ -86,7 +86,7 @@ export default function ContactUsSection() {
                 </section>
 
                 {/* <div className="absolute bottom-0 w-full h-[660px] bg-gradient-to-t from-[#0118C8] to-[#0B285E]" /> */}
-                <section className="absolute w-full bg-[#08237E] min-h-screen pt-24">
+                <section className="absolute w-full bg-[#08237E] pt-24 pb-17">
                     <div className="max-w-[1440px] px-[10px] mx-auto space-y-17 ">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-7">
                             <div className="lg:col-span-4">

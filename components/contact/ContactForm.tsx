@@ -42,7 +42,7 @@ export default function ContactForm() {
                                     {...field}
                                 />
                             </div>
-                            <span className="text-[13px] text-red-500">{form.formState.errors.name?.message}</span>
+                            <span className="text-[12px] font-poppins text-red-500">{form.formState.errors.name?.message}</span>
                         </div>
                     )}
                 />
@@ -60,7 +60,7 @@ export default function ContactForm() {
                                     {...field}
                                 />
                             </div>
-                            <span className="text-[13px] text-red-500">{form.formState.errors.email?.message}</span>
+                            <span className="text-[12px] font-poppins text-red-500">{form.formState.errors.email?.message}</span>
                         </div>
                     )}
                 />
@@ -77,7 +77,7 @@ export default function ContactForm() {
                                     {...field}
                                 />
                             </div>
-                            <span className="text-[13px] text-red-500">{form.formState.errors.message?.message}</span>
+                            <span className="text-[12px] font-poppins text-red-500">{form.formState.errors.message?.message}</span>
                         </div>
                     )}
                 />
