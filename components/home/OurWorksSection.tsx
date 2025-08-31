@@ -101,7 +101,7 @@ function OurWorksCard({ item, index }: OurWorksCardProps) {
                 />
             </Card>
             <h1 className="text-white text-subtitle font-semibold mt-17">{item.title}</h1>
-            <p className="text-[#8F8C8C] text-small font-semibold w-md ">{item.description}</p>
+            <p className="text-[#8F8C8C] text-small font-semibold lg:w-md">{item.description}</p>
             <a href={item.url} className="text-[#8F8C8C] text-small font-semibold flex">
                 View project
                 <ArrowRight className="rotate-[320deg] ml-2" />

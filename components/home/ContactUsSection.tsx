@@ -65,17 +65,17 @@ export default function ContactUsSection() {
                     <div className={`absolute inset-0 bg-[url('/images/stars.png')] bg-contain bg-top brightness-[0.7] contrast-[1.3]`} />
                     <div className="absolute w-full bottom-0 h-[531.08px] bg-gradient-to-t from-[#08237E] to-[#00151F]/1" />
                     <div className="absolute inset-0 ">
-                        <div className="min-h-screen flex items-center justify-center ">
+                        <div className="min-h-screen flex items-center justify-center px-[20px]">
                             <div className="flex flex-col text-white text-center space-y-7">
-                                <h1 className="font-medium text-[96px] font-poppins">Let’s Work Together</h1>
-                                <p className="text-[15px] text-center">
+                                <h1 className="font-medium text-[32px] md:text-[96px] font-poppins">Let’s Work Together</h1>
+                                <p className="text-[13px] md:text-[15px] text-center">
                                     I can listen and work with you whether you’re seeking for a partner to help you develop your brand, explore new <br />
                                     ideas, or just need someone to bounce ideas off of.
                                 </p>
                                 <div className="pt-3 flex justify-center">
                                     <Link
                                         href="/contact-us"
-                                        className="bg-white h-[71px] w-[199px] font-semibold text-black rounded-full text-[20px] flex items-center justify-center">
+                                        className="bg-white h-[53px] md:h-[71px] w-[153px] md:w-[199px] font-semibold text-black rounded-full text-[15px] md:text-[20px] flex items-center justify-center">
                                         Contact Now
                                         <ArrowRightIcon className="ml-3" />
                                     </Link>
@@ -87,8 +87,8 @@ export default function ContactUsSection() {
 
                 {/* <div className="absolute bottom-0 w-full h-[660px] bg-gradient-to-t from-[#0118C8] to-[#0B285E]" /> */}
                 <section className="absolute w-full bg-[#08237E] pt-24 pb-17">
-                    <div className="max-w-[1440px] px-[10px] mx-auto space-y-17 ">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-7">
+                    <div className="max-w-[1440px] md:px-[20px] mx-auto space-y-17 ">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-7 px-[20px]">
                             <div className="lg:col-span-4">
                                 <div>
                                     <Image
@@ -157,13 +157,21 @@ export default function ContactUsSection() {
                                 </h1>
                             </Marquee>
                         </div>
-                        <div className="flex justify-between pb-7">
-                            <p className="text-[13px] text-[#FCFCFC]">Copyright © 2025 WebXora. All rights reserved.</p>
-                            <div className="text-[13px] text-[#FCFCFC] flex space-x-7 underline">
-                                <Link href="/">Privacy Policy</Link>
-                                <Link href="/">Terms of Services</Link>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pb-7 px-[20px]">
+                            <div className="flex justify-center md:justify-start">
+                                <p className="text-[13px] text-[#FCFCFC]">Copyright © 2025 WebXora. All rights reserved.</p>
+                            </div>
+                            <div className="flex justify-center md:justify-end">
+                                <div className="text-[13px] text-[#FCFCFC] flex space-x-7 underline">
+                                    <Link href="/">Privacy Policy</Link>
+                                    <Link href="/">Terms of Services</Link>
+                                </div>
                             </div>
                         </div>
+                        {/* <div className="flex flex-col md:flex-row text-center space-y-4 justify-between pb-7 px-[20px]">
+
+
+                        </div> */}
                     </div>
                 </section>
             </div>

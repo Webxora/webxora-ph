@@ -253,8 +253,8 @@ export default function WhatOurClientSaySection() {
                         })}
                     </Marquee>
                 </div>
-                <div className="absolute h-full w-[297px] bg-gradient-to-r from-[#030019] to-[#030019]/1" />
-                <div className="absolute right-0 h-full w-[297px] bg-gradient-to-r from-[#030019]/1 to-[#030019]" />
+                <div className="hidden md:block absolute h-full w-[297px] bg-gradient-to-r from-[#030019] to-[#030019]/1" />
+                <div className="hidden md:block absolute right-0 h-full w-[297px] bg-gradient-to-r from-[#030019]/1 to-[#030019]" />
             </div>
         </Section>
     )

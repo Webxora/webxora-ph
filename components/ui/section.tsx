@@ -55,14 +55,14 @@ export default function Section({
                         className="w-auto h-auto object-cover"
                     />
                 </div>
-                <div className="text-center space-y-2 flex flex-col items-center">
+                <div className="text-center space-y-2 flex flex-col items-center px-[20px]">
                     <h1 className="text-4xl font-bold font-lato">{title}</h1>
-                    <p className="text-md text-gray-400 w-sm font-lato">{subtitle}</p>
+                    <p className="text-md text-gray-400 lg:w-sm font-lato">{subtitle}</p>
                 </div>
             </div>
             <div className={`relative ${background}`}>
                 <div className={overlay} />
-                <div className={`max-w-[1440px] px-[10px] mx-auto ${overlay ? "absolute inset-0" : ""}`}>
+                <div className={`max-w-[1440px] px-[20px] mx-auto ${overlay ? "absolute inset-0" : ""}`}>
                     {children}
                 </div>
             </div>

@@ -74,8 +74,7 @@ export default function WhatWeOfferSection() {
     const displayedItems = whatWeOffer; //isViewMore ? whatWeOffer : whatWeOffer.slice(0, 5);
     return (
         <section className="min-h-screen space-y-24 pt-32 bg-[#010314]">
-
-            <div className="text-white space-y-1">
+            <div className="text-white space-y-12">
                 <div className="flex items-center justify-center space-x-2">
                     <Image
                         src="/images/bracket.png"
@@ -98,31 +97,31 @@ export default function WhatWeOfferSection() {
                 </div>
                 <div className="text-center space-y-2 flex flex-col items-center">
                     <h1 className="text-4xl font-bold font-lato">Our Services</h1>
-                    <p className="text-md text-gray-400 w-sm font-lato">We guarantee websites that work for everyone, load fast, and follow modern standards.</p>
+                    <p className="text-md text-gray-400 lg:w-sm font-lato px-[20px]">We guarantee websites that work for everyone, load fast, and follow modern standards.</p>
                 </div>
             </div>
 
-            <div className="">
+            <div className="px-[20px]">
                 <input type="checkbox" id="toggle" className="hidden peer" />
-                <div className="overflow-hidden max-h-[560px] peer-checked:max-h-[1000px] transition-all duration-500 bg-[url('/images/map.png')] bg-top bg-contain bg-local relative">
+                <div className="overflow-hidden max-h-[590px] peer-checked:max-h-[1200px] transition-all duration-500 bg-[url('/images/map.png')] bg-top bg-contain bg-local relative">
                     {/* <div className="absolute w-full h-full bg-gradient-to-t from-[#030019] to-[#00060F]/50" /> */}
                     <div className="">
-                        <div className="w-[479px] mx-auto ">
+                        <div className="w-full sm:w-[479px] mx-auto ">
                             {displayedItems.map((item, index) => (
-                                <div key={index} className="cursor-pointer h-[111px] flex items-center justify-center rounded-[20px] transition-all duration-600 hover:bg-[#046dff9c] hover:border hover:border-2 hover:border-white group">
+                                <div key={index} className="cursor-pointer h-[111px] mb-1 md:mb-2 flex items-center justify-center rounded-[20px] transition-all duration-600 hover:bg-[#046dff9c] hover:border hover:border-2 hover:border-white group">
                                     <div className="flex justify-between w-full px-11">
                                         <div className="flex space-x-[29px]">
-                                            <div className="text-white text-xl">
+                                            <div className="text-white text-[13px] md:text-xl">
                                                 <span className="font-ramen">{item.number}</span>
                                             </div>
                                             <div>
-                                                <h1 className="text-gradient font-bold text-[24px] uppercase ">{item.title}</h1>
+                                                <h1 className="text-gradient font-bold text-[20px] md:text-[24px] uppercase ">{item.title}</h1>
                                                 <div className="pr-17">
-                                                    <p className="text-small text-[#CDCDCD] font-lato">{item.description}</p>
+                                                    <p className="text-[13px] md:text-small text-[#CDCDCD] font-lato">{item.description}</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="pt-2">
+                                        <div className="hidden md:pt-2 md:block">
                                             <button className="rounded-full border h-[30px] w-[30px] relative overflow-hidden bg-white">
                                                 <div className="h-[30px] w-[30px] flex items-center justify-center rounded-full">
                                                     <ArrowRight className="h-4 w-4 transition-all duration-600 group-hover:translate-x-[30px]" />
