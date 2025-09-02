@@ -37,13 +37,6 @@ export default function Section({
                         className="w-auto h-auto object-cover scale-x-[-1]"
                     />
                     <div className="flex items-center justify-center space-x-2">
-                        {/* <Image
-                            src={`/images/${icon}`}
-                            alt="Capture Image"
-                            width={12}
-                            height={12}
-                            className="object-cover"
-                        /> */}
                         <Icon icon={icon} width="24" height="24" />
                         <h1 className="font-lato text-sm">{id}</h1>
                     </div>

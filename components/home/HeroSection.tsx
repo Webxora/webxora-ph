@@ -32,7 +32,7 @@ export default function HeroSection() {
                     />
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center">
-                    <div className="max-w-[1440px] w-full h-full flex flex-col justify-center items-center space-y-14">
+                    <div className="max-w-[1440px] px-[40px] sm:px-0 w-full flex flex-col justify-center items-center space-y-7">
                         <div className="bg-gradient-to-t from-[#006D9C] to-[#0E204F] border border-[#3399FF] rounded-full h-[38px] w-[199px] flex items-center justify-center">
                             <div className="flex items-center space-x-2">
                                 <Image
@@ -48,57 +48,79 @@ export default function HeroSection() {
                                     <span className="text-[#00EEFF] ml-1">AI Automation</span>
                                 </p>
                             </div>
-                            <div></div>
                         </div>
-                        <div className="relative w-full flex justify-center items-center">
+                        <div className="relative w-full sm:w-xl md:w-2xl lg:w-1/2 flex justify-center items-center">
                             <Image
-                                src="/images/capture.png"
-                                alt="Capture Image"
-                                width={500}
-                                height={500}
-                                className="w-1/2 h-auto object-cover"
+                                src="/images/corner.png"
+                                alt="Frame Right Side"
+                                width={5000}
+                                height={5000}
+                                className="w-auto h-auto object-cover rotate-[90deg] absolute top-0 left-0"
                             />
-                            <div className="block md:hidden absolute inset-0 flex flex-col justify-center items-center text-center font-black text-[38px] md:text-[48px] uppercase p-7">
-                                <div className="flex space-x-2">
-                                    <span className="text-[#00EEFF] drop-shadow-xl">Your</span>
-                                    <div className="relative">
-                                        <span className="text-white drop-shadow-[0_0_10px_#FFFFFF]">Digital</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_20px_#FFFFFF]">Digital</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_30px_#fff]">Digital</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_140px_#fff]">Digital</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_160px_#fff]">Digital</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_180px_#fff]">Digital</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_200px_#fff]">Digital</span>
+                            <Image
+                                src="/images/corner.png"
+                                alt="Frame Right Side"
+                                width={5000}
+                                height={5000}
+                                className="w-auto h-auto object-cover absolute bottom-0 left-0"
+                            />
+                            <Image
+                                src="/images/corner.png"
+                                alt="Frame Right Side"
+                                width={5000}
+                                height={5000}
+                                className="w-auto h-auto object-cover scale-x-[-1]  absolute bottom-0 right-0"
+                            />
+                            <Image
+                                src="/images/corner.png"
+                                alt="Frame Right Side"
+                                width={5000}
+                                height={5000}
+                                className="w-auto h-auto object-cover scale-x-[-1] rotate-[-90deg] absolute top-0 right-0"
+                            />
+                            <div className="">
+                                <div className="block xl:hidden flex flex-col justify-center items-center text-center font-black text-[38px] md:text-[48px] uppercase">
+                                    <div className="flex space-x-2">
+                                        <span className="text-[#00EEFF] drop-shadow-xl">Your</span>
+                                        <div className="relative">
+                                            <span className="text-white drop-shadow-[0_0_10px_#FFFFFF]">Digital</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_20px_#FFFFFF]">Digital</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_30px_#fff]">Digital</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_140px_#fff]">Digital</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_160px_#fff]">Digital</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_180px_#fff]">Digital</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_200px_#fff]">Digital</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="flex space-x-2">
-                                    <div className="relative">
-                                        <span className="text-white drop-shadow-[0_0_10px_#FFFFFF]">Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_20px_#FFFFFF]">Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_30px_#fff]">Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_140px_#fff]">Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_160px_#fff]">Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_180px_#fff]">Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_200px_#fff]">Future</span>
+                                    <div className="flex space-x-2">
+                                        <div className="relative">
+                                            <span className="text-white drop-shadow-[0_0_10px_#FFFFFF]">Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_20px_#FFFFFF]">Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_30px_#fff]">Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_140px_#fff]">Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_160px_#fff]">Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_180px_#fff]">Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_200px_#fff]">Future</span>
+                                        </div>
+                                        <span className="text-[#E398FF] drop-shadow-xl">Starts</span>
                                     </div>
-                                    <span className="text-[#E398FF] drop-shadow-xl">Starts</span>
+                                    <span className="text-[#E398FF] drop-shadow-xl">Here</span>
                                 </div>
-                                <span className="text-[#E398FF] drop-shadow-xl">Here</span>
-                            </div>
-                            <div className="hidden absolute inset-0 md:flex flex-col justify-center items-center text-center font-black text-[48px] uppercase p-7">
-                                <div className="flex space-x-2">
-                                    <span className="text-[#00EEFF] drop-shadow-xl">Your</span>
-                                    <div className="relative">
-                                        <span className="text-white drop-shadow-[0_0_10px_#FFFFFF]">Digital Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_20px_#FFFFFF]">Digital Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_30px_#fff]">Digital Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_140px_#fff]">Digital Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_160px_#fff]">Digital Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_180px_#fff]">Digital Future</span>
-                                        <span className="absolute left-0 text-white drop-shadow-[0_0_200px_#fff]">Digital Future</span>
+                                <div className="hidden xl:flex flex-col justify-center items-center text-center font-black text-[48px] uppercase p-7">
+                                    <div className="flex space-x-2">
+                                        <span className="text-[#00EEFF] drop-shadow-xl">Your</span>
+                                        <div className="relative">
+                                            <span className="text-white drop-shadow-[0_0_10px_#FFFFFF]">Digital Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_20px_#FFFFFF]">Digital Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_30px_#fff]">Digital Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_140px_#fff]">Digital Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_160px_#fff]">Digital Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_180px_#fff]">Digital Future</span>
+                                            <span className="absolute left-0 text-white drop-shadow-[0_0_200px_#fff]">Digital Future</span>
+                                        </div>
                                     </div>
+                                    <span className="text-[#E398FF] drop-shadow-xl">Starts Here</span>
                                 </div>
-                                <span className="text-[#E398FF] drop-shadow-xl">Starts Here</span>
                             </div>
                         </div>
                         <div className="flex flex-col md:flex-row space-x-7 space-y-2 pt-14">
@@ -122,10 +144,10 @@ export default function HeroSection() {
             <section className="pt-32 space-y-2">
                 <h3 className="text-white text-[14px] text-center">The One Who Trust Our Bold Work</h3>
                 <div className="flex justify-center">
-                    <div className="relative flex h-[200px] max-w-[1440px] px-[20px] flex-row items-center justify-center overflow-hidden">
+                    <div className="relative flex h-[200px] max-w-[1440px] flex-row items-center justify-center overflow-hidden">
                         <Marquee reverse pauseOnHover className="[--duration:20s]">
                             {clients.map((item, i) => (
-                                <div key={i} className="mx-10 flex items-center">
+                                <div key={i} className="mx-2 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10 flex items-center">
                                     <Image
                                         src={`/images/clients/${item.image}`}
                                         alt={item.image}

@@ -5,42 +5,42 @@ import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
 import { BsFacebook, BsInstagram, BsTiktok } from "react-icons/bs";
 
-type PagesProps = {
-    name: string;
-    href: string;
-}
+// type PagesProps = {
+//     name: string;
+//     href: string;
+// }
 
 type SocMedProps = {
     icon: ComponentType<SVGProps<SVGSVGElement>>;
     href: string;
 }
 
-const pages: PagesProps[] = [
-    // {
-    //     name: "Home",
-    //     href: "/",
-    // },
-    // {
-    //     name: "About",
-    //     href: "/about",
-    // },
-    // {
-    //     name: "Services",
-    //     href: "/services",
-    // },
-    // {
-    //     name: "Projects",
-    //     href: "/projects",
-    // },
-    // {
-    //     name: "Pricing",
-    //     href: "/pricing",
-    // },
-    // {
-    //     name: "Blog",
-    //     href: "/blog",
-    // },
-];
+// const pages: PagesProps[] = [
+//     {
+//         name: "Home",
+//         href: "/",
+//     },
+//     {
+//         name: "About",
+//         href: "/about",
+//     },
+//     {
+//         name: "Services",
+//         href: "/services",
+//     },
+//     {
+//         name: "Projects",
+//         href: "/projects",
+//     },
+//     {
+//         name: "Pricing",
+//         href: "/pricing",
+//     },
+//     {
+//         name: "Blog",
+//         href: "/blog",
+//     },
+// ];
 
 const socMed: SocMedProps[] = [
     {
@@ -89,7 +89,7 @@ export default function ContactUsSection() {
                 <section className="absolute w-full bg-[#08237E] pt-24 pb-17">
                     <div className="max-w-[1440px] md:px-[20px] mx-auto space-y-17 ">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-7 px-[20px]">
-                            <div className="lg:col-span-4">
+                            <div className="lg:col-span-6">
                                 <div>
                                     <Image
                                         src="/images/logo.png"
@@ -119,8 +119,8 @@ export default function ContactUsSection() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="text-white text-[15px] space-y-7 pt-14">
-                                {/* <p className="font-semibold font-poppins">Pages</p> */}
+                            {/* <div className="text-white text-[15px] space-y-7 pt-14">
+                                <p className="font-semibold font-poppins">Pages</p>
                                 <ul className="space-y-7 font-light">
                                     {pages.map((item, index) => (
                                         <li key={index}>
@@ -130,7 +130,7 @@ export default function ContactUsSection() {
                                 </ul>
                             </div>
                             <div className="text-white text-[15px] space-y-7 pt-14">
-                                {/* <p className="font-semibold font-poppins">Pages</p> */}
+                                <p className="font-semibold font-poppins">Pages</p>
                                 <ul className="space-y-7 font-light">
                                     {pages.map((item, index) => (
                                         <li key={index}>
@@ -138,10 +138,10 @@ export default function ContactUsSection() {
                                         </li>
                                     ))}
                                 </ul>
-                            </div>
-                            <div className="text-white text-[15px] space-y-7 pt-14">
+                            </div> */}
+                            <div className="text-white text-center md:text-left text-[15px] space-y-7 pt-14">
                                 <p className="font-semibold font-poppins">Follow Us</p>
-                                <div className="flex space-x-7">
+                                <div className="flex justify-center md:justify-start space-x-7">
                                     {socMed.map((item, index) => (
                                         <Link key={index} href={item.href}>
                                             <item.icon className="h-[15px] w-[15.31px]" />

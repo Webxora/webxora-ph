@@ -73,7 +73,7 @@ export default function WhatWeOfferSection() {
     const [isViewMore, setIsViewMore] = useState<boolean>(true);
     const displayedItems = whatWeOffer; //isViewMore ? whatWeOffer : whatWeOffer.slice(0, 5);
     return (
-        <section className="min-h-screen space-y-24 pt-32 bg-[#010314]">
+        <section className="space-y-24 pt-32 bg-[#010314]">
             <div className="text-white space-y-12">
                 <div className="flex items-center justify-center space-x-2">
                     <Image
