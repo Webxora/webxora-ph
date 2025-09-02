@@ -16,7 +16,7 @@ export default function Home() {
       <WhyChooseUsSection />
       <OurWorksSection />
       <WhatWeOfferSection />
-      {/* <PricingSection /> */}
+      <PricingSection />
       <WhatOurClientSaySection />
       <ContactUsSection />
     </React.Fragment>
