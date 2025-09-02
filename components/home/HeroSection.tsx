@@ -20,7 +20,7 @@ const clients: ClientProps[] = [
 export default function HeroSection() {
     return (
         <React.Fragment>
-            <section className="min-h-screen bg-[url('/images/grid.png')] bg-contain relative">
+            <section className="min-h-screen bg-[url('/images/grid.png')] bg-contain bg-local relative">
                 <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(3,0,25,0.7),rgba(37,124,255,0.5),rgba(3,0,25,0.7))]" />
                 <div className="absolute inset-0 flex justify-center items-center z-0">
                     <Image
@@ -79,7 +79,7 @@ export default function HeroSection() {
                                 className="w-auto h-auto object-cover scale-x-[-1] rotate-[-90deg] absolute top-0 right-0"
                             />
                             <div className="">
-                                <div className="block xl:hidden flex flex-col justify-center items-center text-center font-black text-[38px] md:text-[48px] uppercase">
+                                <div className="block xl:hidden flex flex-col justify-center items-center text-center font-black text-[36px] md:text-[48px] uppercase">
                                     <div className="flex space-x-2">
                                         <span className="text-[#00EEFF] drop-shadow-xl">Your</span>
                                         <div className="relative">
@@ -123,16 +123,16 @@ export default function HeroSection() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col md:flex-row space-x-7 space-y-2 pt-14">
+                        <div className="flex flex-col md:flex-row justify-center space-x-7 space-y-2 pt-14">
                             <Button
-                                className="h-[44px] w-[180px] rounded-full text-white"
+                                className="h-[44px] w-[199px] md:w-[180px] rounded-full text-white"
                                 variant="style2"
                             >
                                 <PlayIcon />
                                 Watch Live Demo
                             </Button>
                             <Button
-                                className="h-[44px] w-[180px] rounded-full text-white"
+                                className="h-[44px] w-[199px] md:w-[180px] rounded-full text-white"
                                 variant="outline"
                             >
                                 Learn More

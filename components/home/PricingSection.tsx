@@ -119,13 +119,13 @@ export default function PricingSection() {
             {/* <div className="relative w-full bg-red-500">
                 <div className="absolute bottom-0 w-[182px] h-[845px] bg-[url('/images/rectangle-lights-opposite.png')] bg-contain bg-no-repeat bg-top bg-local" />
             </div> */}
-            <div className="flex items-center justify-center space-x-8 transition-all duration-600">
+            <div className="flex flex-col xl:flex-row items-center justify-center space-x-8 space-y-4 transition-all duration-600">
                 {pricing.map((item, index) => (
                     <div
                         key={index}
                         onClick={() => setIsViewMore(!isViewMore)}
                     >
-                        <Card className={`w-[330px] mx-auto bg-red-500 group relative overflow-hidden cursor-pointer ${item.isPopular ? "border-gradient-animated" : "border-gradient-2"}`}>
+                        <Card className={`w-[330px] xl:mx-auto bg-red-500 group relative overflow-hidden cursor-pointer ${item.isPopular ? "border-gradient-animated" : "border-gradient-2"}`}>
                             {item.isPopular && (
                                 <div className="bg-gradient-to-r from-[#FF82D5] to-[#8B07FF] rotate-[45deg] w-[227px] absolute -right-15 top-10">
                                     <div className="flex items-center justify-center space-x-2 h-[42.13px]">
