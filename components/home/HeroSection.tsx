@@ -123,20 +123,24 @@ export default function HeroSection() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col md:flex-row justify-center space-x-7 space-y-2 pt-14">
-                            <Button
-                                className="h-[44px] w-[199px] md:w-[180px] rounded-full text-white"
-                                variant="style2"
-                            >
-                                <PlayIcon />
-                                Watch Live Demo
-                            </Button>
-                            <Button
-                                className="h-[44px] w-[199px] md:w-[180px] rounded-full text-white"
-                                variant="outline"
-                            >
-                                Learn More
-                            </Button>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-7 w-sm sm:w-xl md:w-2xl lg:w-1/2">
+                            <div className="text-center md:text-right">
+                                <Button
+                                    className="h-[44px] w-[199px] md:w-[180px] rounded-full text-white"
+                                    variant="style2"
+                                >
+                                    <PlayIcon />
+                                    Watch Live Demo
+                                </Button>
+                            </div>
+                            <div className="text-center md:text-left">
+                                <Button
+                                    className="h-[44px] w-[199px] md:w-[180px] rounded-full text-white"
+                                    variant="outline"
+                                >
+                                    Learn More
+                                </Button>
+                            </div>
                         </div>
                     </div>
                 </div>
