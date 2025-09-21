@@ -18,12 +18,27 @@ body {
 * Border styles
 */
 .border-gradient {
-    border: 1px solid transparent;
+    /* border: 1px solid transparent;
     padding: 0px;
     border-radius: 50px;
     background: linear-gradient(#09022D, #09022D) padding-box, linear-gradient(to top, #FB82FF, #00BBFF) border-box;
     background-clip: padding-box, border-box;
-    background-origin: border-box;
+    background-origin: border-box; */
+
+  border: 1px solid transparent;
+  border-radius: 50px;
+
+  /* Layer 1 = fill, semi-transparent dark */
+  /* Layer 2 = border gradient */
+  background:
+    linear-gradient(rgba(9, 2, 45, 0.5), rgba(9, 2, 45, 0.5)) padding-box,
+    linear-gradient(to top, #FB82FF, #00BBFF) border-box;
+
+  background-clip: padding-box, border-box; /* first stops at padding-box, second shows on border */
+  background-origin: border-box;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Safari */
 }
 
 .border-gradient-1 {

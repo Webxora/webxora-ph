@@ -7,21 +7,26 @@ import { Textarea } from "@/components/ui/textarea";
 import { ContactFormValues, contactSchema, initValues } from "@/schemas/contact.schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2Icon } from "lucide-react";
+import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
+import Alert from "@/components/ui/alert";
 
 export default function ContactForm() {
+    const [successMessage, setSuccessMessage] = useState<string | null>(null)
+
     const form = useForm<ContactFormValues>({
         resolver: zodResolver(contactSchema),
         defaultValues: initValues
     })
+
     const onSubmit = async (data: ContactFormValues) => {
         try {
-            await submitContact(data) // server action
-            alert("✅ Message sent successfully!")
+            const result = await submitContact(data);
+            setSuccessMessage(result.message)
             form.reset()
         } catch (err) {
-            console.log(err);
-            alert("❌ Failed to send message")
+            setSuccessMessage(null)
+            form.setError("root", { message: "Failed to send message. Please try again." })
         }
     }
 
@@ -82,6 +87,22 @@ export default function ContactForm() {
                     )}
                 />
             </div>
+            {form.formState.errors.root && (
+                <Alert
+                    type="error"
+                    title="Error"
+                    message={form.formState.errors.root.message ?? ''}
+                />
+            )}
+
+            {successMessage && (
+                <Alert
+                    type="success"
+                    title="Success"
+                    message={successMessage}
+                />
+            )}
+
             <Button
                 className="rounded-none h-[54px] w-full"
                 variant="style1"
@@ -90,7 +111,7 @@ export default function ContactForm() {
                 {form.formState.isSubmitting ? (
                     <>
                         <Loader2Icon className="animate-spin" />
-                        Please wait
+                        Sending...
                     </>
                 ) : "Submit"}
             </Button>

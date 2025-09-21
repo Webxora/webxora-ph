@@ -101,9 +101,10 @@ export default function WhatWeOfferSection() {
                 </div>
             </div>
 
-            <div className="px-[20px]">
+            <div className="">
                 <input type="checkbox" id="toggle" className="hidden peer" />
-                <div className="overflow-hidden max-h-[590px] peer-checked:max-h-[1200px] transition-all duration-500 bg-[url('/images/map.png')] bg-top bg-contain bg-local relative">
+<div className="overflow-hidden max-h-[590px] peer-checked:max-h-[1200px] transition-all duration-500 bg-[url('/images/map.png')] md:bg-[url('/images/map-1.png')] bg-[length:731px_359px] md:bg-cover bg-no-repeat bg-center relative">
+
                     {/* <div className="absolute w-full h-full bg-gradient-to-t from-[#030019] to-[#00060F]/50" /> */}
                     <div className="">
                         <div className="w-full sm:w-[479px] mx-auto ">

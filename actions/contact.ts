@@ -1,23 +1,27 @@
-"use server"
+"use server";
 
-import { contactSchema, ContactFormValues } from "@/schemas/contact.schema"
+import { contactSchema, ContactFormValues } from "@/schemas/contact.schema";
 
 export async function submitContact(values: ContactFormValues) {
-    // ✅ validate again on server (security)
-    const parsed = contactSchema.parse(values)
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-    console.log("submitted:", values)
+  const parsed = contactSchema.parse(values);
 
-    // Example: send to external API
-    //   const res = await fetch("https://api.example.com/contact", {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify(parsed),
-    //   })
+  const formData = new FormData();
+  formData.append("name", parsed.name);
+  formData.append("email", parsed.email);
+  formData.append("message", parsed.message);
 
-    //   if (!res.ok) {
-    //     throw new Error("Failed to send contact form")
-    //   }
+  const res = await fetch(
+    `https://script.google.com/macros/s/${process.env.NEXT_PUBLIC_APPSCRIPT_KEY}/exec`,
+    {
+      method: "POST",
+      body: formData,
+    }
+  );
 
-    return { success: true }
+  if (!res.ok) {
+    throw new Error("Failed to send contact form");
+  }
+
+  const data = await res.json();
+  return data; 
 }

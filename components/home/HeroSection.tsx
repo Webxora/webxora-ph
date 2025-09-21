@@ -146,7 +146,7 @@ export default function HeroSection() {
                 </div>
             </section>
             <section className="pt-32 space-y-2">
-                <h3 className="text-white text-[14px] text-center">The One Who Trust Our Bold Work</h3>
+                <h3 className="text-white text-[14px] text-center hidden md:block">The One Who Trust Our Bold Work</h3>
                 <div className="flex justify-center">
                     <div className="relative flex h-[200px] max-w-[1440px] flex-row items-center justify-center overflow-hidden">
                         <Marquee reverse pauseOnHover className="[--duration:20s]">
