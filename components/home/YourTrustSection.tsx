@@ -18,7 +18,6 @@ const yourTrust: YourTrustProps[] = [
   { description: "Lorem ipsum 4", image: "design-excellence.png", className: "" },
 ];
 
-// ✅ Child component that uses the hook
 function ParallaxImage({
   item,
   index,
@@ -73,8 +72,6 @@ function ParallaxImage({
 
 export default function YourTrustSection() {
   const containerRef = useRef<HTMLDivElement>(null);
-
-  // example values for marginTop (you had commented out)
   const marginTop = [100, 50, -50, -100];
 
   return (
@@ -84,7 +81,6 @@ export default function YourTrustSection() {
       title="What We Guarantee"
       subtitle="We guarantee websites that work for everyone, load fast, and follow modern standards."
     >
-      {/* Parallax images */}
       <div className="absolute top-0 right-0 left-0 hidden xl:flex items-center justify-center">
         <div
           ref={containerRef}
@@ -102,7 +98,6 @@ export default function YourTrustSection() {
         </div>
       </div>
 
-      {/* mobile (unchanged) */}
       <div className="xl:hidden text-white">
         <div className="flex flex-col space-y-[10%]">
           {yourTrust.map((item, index) => (
