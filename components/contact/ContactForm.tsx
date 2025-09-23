@@ -25,6 +25,7 @@ export default function ContactForm() {
             setSuccessMessage(result.message)
             form.reset()
         } catch (err) {
+            console.log(err)
             setSuccessMessage(null)
             form.setError("root", { message: "Failed to send message. Please try again." })
         }
