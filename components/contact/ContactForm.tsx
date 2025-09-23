@@ -24,8 +24,8 @@ export default function ContactForm() {
             const result = await submitContact(data);
             setSuccessMessage(result.message)
             form.reset()
-        } catch (err) {
-            console.log(err)
+        } catch () {
+            // console.log(err)
             setSuccessMessage(null)
             form.setError("root", { message: "Failed to send message. Please try again." })
         }
