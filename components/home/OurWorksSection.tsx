@@ -15,28 +15,28 @@ const ourWorks: OurWorksProps[] = [
     {
         title: "Gotham",
         description: "Lorem ipsum dolor sit amet consectetur. Ut nisi sagittis magna risus pharetra purus eleifend at lectus. Vivamus dignissim eu commodo suspendisse phasellus aenean. Dolor porttitor lacinia mi viverra turpis ut sit eget egestas.",
-        image: "project-1.png",
+        image: "gotham.webp",
         url: "https://gothamauto.com/",
         className: ""
     },
     {
         title: "Republic Of Gamers",
         description: "Lorem ipsum dolor sit amet consectetur. Ut nisi sagittis magna risus pharetra purus eleifend at lectus. Vivamus dignissim eu commodo suspendisse phasellus aenean. Dolor porttitor lacinia mi viverra turpis ut sit eget egestas.",
-        image: "project-3.png",
+        image: "rog.webp",
         url: "",
         className: "row-span-2"
     },
     {
         title: "Preciso",
         description: "Lorem ipsum dolor sit amet consectetur. Ut nisi sagittis magna risus pharetra purus eleifend at lectus. Vivamus dignissim eu commodo suspendisse phasellus aenean. Dolor porttitor lacinia mi viverra turpis ut sit eget egestas.",
-        image: "project-4.png",
+        image: "preciso.webp",
         url: "https://preciso.webxora.com/",
         className: ""
     },
     {
         title: "Chemist Greenhouse",
         description: "Lorem ipsum dolor sit amet consectetur. Ut nisi sagittis magna risus pharetra purus eleifend at lectus. Vivamus dignissim eu commodo suspendisse phasellus aenean. Dolor porttitor lacinia mi viverra turpis ut sit eget egestas.",
-        image: "project-2.png",
+        image: "chemist.webp",
         url: "https://www.chemistgreenhouse.com.au/",
         className: "row-span-2 "
     },

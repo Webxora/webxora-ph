@@ -8,9 +8,9 @@ export default function ComingSoonModal() {
         <div>
             {isOpen && (
                 <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
-                    <div className="bg-[#030019] border border-[#434343] rounded-[10px] shadow-xl p-8 w-[90%] max-w-md text-center relative">
+                    <div className="bg-[#030019] border border-[#434343] rounded-[10px] shadow-xl p-8 w-[90%] max-w-md items-center relative flex flex-col gap-[5px]">
                         {/* Logo */}
-                        <div className="flex justify-center mb-4">
+                        <div className="flex justify-center">
                             <Image
                                 src="/images/logo.png" // ilagay mo yung actual path ng logo
                                 alt="WebXora Logo"
@@ -19,10 +19,10 @@ export default function ComingSoonModal() {
                             />
                         </div>
                         {/* Title */}
-                        <h2 className="text-2xl font-bold text-[#E398FF] mb-2">
+                        <h2 className="text-[42px] font-bold text-[#E398FF]">
                             Coming Soon 🚀
                         </h2>
-                        <p className="text-[#00EEFF] mb-6">
+                        <p className="text-[#00EEFF] text-[14px] max-w-xs text-center mb-[10px]">
                             We’re working hard to launch something amazing. Stay tuned!
                         </p>
 
