@@ -177,55 +177,32 @@ export default function YourTrustSection() {
             </div>
 
             <div className="xl:hidden text-white">
-                <div className="flex flex-col space-y-[10%]">
+                <div className="flex flex-col space-y-[10%] ">
                     {yourTrust.map((item, index) => (
                         <div key={index} className="flex flex-col items-center justify-center">
-                            <div className={`relative`}>
-                                <Image
-                                    src={`/images/offers/${item.image}`}
-                                    alt={item.image}
-                                    width={490.34}
-                                    height={404}
-                                    className={`h-[clamp(100px,70vw,404px)] w-auto object-cover`}
-                                />
-                                <div className="absolute inset-0 -z-10">
-                                    <div className="absolute -top-[20%] z-10">
-                                        <Image
-                                            src={`/images/shades/shade.png`}
-                                            alt={item.image}
-                                            width={2890.34}
-                                            height={2804}
-                                            className={`h-auto w-auto object-cover`}
-                                        />
+                            <div className={`relative w-[390.34px] h-[304px]`}>
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <div className="relative">
+                                        <div className="bg-[#9173FF] shadow-[0_0px_200px_#9173FF] h-[125px] w-[125px] rounded-full absolute" />
+                                        <div className="bg-[#9173FF] shadow-[0_0px_180px_#9173FF] h-[125px] w-[125px] rounded-full absolute" />
+                                        <div className="bg-[#9173FF] shadow-[0_0px_160px_#9173FF] h-[125px] w-[125px] rounded-full absolute" />
+                                        <div className="bg-[#9173FF] shadow-[0_0px_140px_#9173FF] h-[125px] w-[125px] rounded-full absolute" />
+                                        <div className="bg-[#9173FF] shadow-[0_0px_120px_#9173FF] h-[125px] w-[125px] rounded-full absolute" />
+                                        <div className="bg-[#9173FF] shadow-[0_0px_100px_#9173FF] h-[125px] w-[125px] rounded-full absolute" />
+                                        <div className="bg-[#9173FF] shadow-[0_0px_80px_#9173FF] h-[125px] w-[125px] rounded-full absolute" />
+                                        <div className="bg-[#9173FF] shadow-[0_0px_60px_#9173FF] h-[125px] w-[125px] rounded-full absolute" />
+                                        <div className="bg-[#9173FF] shadow-[0_0px_40px_#9173FF] h-[125px] w-[125px] rounded-full absolute" />
+                                        <div className="bg-[#9173FF] shadow-[0_0px_20px_#9173FF] h-[125px] w-[125px] rounded-full" />
                                     </div>
-                                    <div className="absolute -top-[20%] z-10">
-                                        <Image
-                                            src={`/images/shades/shade.png`}
-                                            alt={item.image}
-                                            width={2890.34}
-                                            height={2804}
-                                            className={`h-auto w-auto object-cover`}
-                                        />
-                                    </div>
-                                    <div className="absolute -top-[25%] -right-[25%] z-10">
-                                        <Image
-                                            src={`/images/shades/shade.png`}
-                                            alt={item.image}
-                                            width={2890.34}
-                                            height={2804}
-                                            className={`h-auto w-auto object-cover`}
-                                        />
-                                    </div>
-                                    <div className="absolute -top-[25%] -left-[25%] z-10">
-                                        <Image
-                                            src={`/images/shades/shade.png`}
-                                            alt={item.image}
-                                            width={2890.34}
-                                            height={2804}
-                                            className={`h-auto w-auto object-cover`}
-                                        />
-                                    </div>
-
+                                </div>
+                                <div className="absolute inset-0 ">
+                                    <Image
+                                        src={`/images/offers/${item.image}`}
+                                        alt={item.image}
+                                        width={390.34}
+                                        height={404}
+                                        className={`h-auto w-auto object-cover`}
+                                    />
                                 </div>
                             </div>
                             <div className="space-y-3 max-w-[490.34px] mt-[5%]">
@@ -265,7 +242,7 @@ function ParallaxItem({ item, index, total }: ParallaxItemProps) {
             className="sticky top-[20vh] h-[504px]"
             style={{ zIndex: total + index }}
         >
-            <div className="transition-transform duration-300 ease-out relative">
+            <div className="w-full transition-transform duration-300 ease-out relative">
                 <Image
                     src={`/images/offers/${item.image}`}
                     alt={item.image}
