@@ -35,8 +35,8 @@ export default function Header() {
                 className={`
                     relative transition-all duration-600 mx-auto
                     ${scrolled
-                        ? "rounded-[50px] md:w-[963px] mx-auto mt-[20px]"
-                        : "rounded-[50px] md:rounded-none w-full"
+                        ? "rounded-[50px] lg:w-[963px] mx-auto md:mt-[20px]"
+                        : "rounded-[50px] rounded-none w-full"
                     }`}
             >
                 <div

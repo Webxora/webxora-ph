@@ -55,7 +55,7 @@ export default function YourTrustSection() {
                     <div key={index} className="hidden xl:flex justify-between h-[500px] mb-2 text-white" style={{ paddingTop: paddingTop }}>
                         <div className="">
                             {index % 2 === 0 ? (
-                                <div className="max-w-md pr-24 mt-[10em] pb-[10%]">
+                                <div className="max-w-sm pr-24 mt-[10em] pb-[10%]">
                                     <span className="relative flex items-center justify-center size-3 mb-[5%]">
                                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#FB82FF] opacity-75"></span>
                                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#FB82FF] opacity-65"></span>
@@ -78,7 +78,7 @@ export default function YourTrustSection() {
                         </div>
                         <div className="">
                             {index % 2 !== 0 ? (
-                                <div className="max-w-md pl-24 mt-[10em] pb-[10%]">
+                                <div className="max-w-sm pl-24 mt-[10em] pb-[10%]">
                                     <span className="relative flex items-center justify-center size-3 mb-[5%]">
                                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#FB82FF] opacity-75"></span>
                                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#FB82FF] opacity-65"></span>
