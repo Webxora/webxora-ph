@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 type SectionPropps = {
     id: string;
     icon: string;
+    index?: string
     title: string;
     subtitle: string;
     children: ReactNode;
@@ -18,6 +19,7 @@ export default function Section({
     id,
     icon,
     title,
+    index,
     subtitle,
     children,
     className = "",
@@ -26,7 +28,7 @@ export default function Section({
     parentBackground = ""
 }: SectionPropps) {
     return (
-        <section className={`min-h-screen space-y-24 pt-32  ${className} ${parentBackground}`}>
+        <section id={index} className={`min-h-screen space-y-24 pt-32  ${className} ${parentBackground}`}>
             <div className="text-white space-y-12">
                 <div className="flex items-center justify-center space-x-2">
                     <Image

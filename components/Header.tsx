@@ -11,13 +11,12 @@ export default function Header() {
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-
     const links = [
         { href: "/", label: "Home" },
-        { href: "/about", label: "About" },
-        { href: "/services", label: "Services" },
-        { href: "/projects", label: "Projects" },
-        { href: "/pricing", label: "Pricing" },
+        { href: "/#about", label: "About" },
+        { href: "/#services", label: "Services" },
+        { href: "/#projects", label: "Projects" },
+        { href: "/#pricing", label: "Pricing" },
     ];
 
     useEffect(() => {
@@ -36,7 +35,7 @@ export default function Header() {
                 className={`
                     relative transition-all duration-600 mx-auto
                     ${scrolled
-                        ? "rounded-[50px] md:max-w-[963px] mx-auto mt-[20px]"
+                        ? "rounded-[50px] md:w-[963px] mx-auto mt-[20px]"
                         : "rounded-[50px] md:rounded-none w-full"
                     }`}
             >
@@ -78,12 +77,15 @@ export default function Header() {
 
                         {/* Desktop Button */}
                         <div className="hidden md:block">
-                            <button className="group relative flex items-center border border-white rounded-full p-2 pr-7 text-sm text-white relative hover:bg-white hover:text-black transition-all duration-300 overflow-hidden">
+                            <Link
+                                href="/contact-us"
+                                className="group relative flex items-center border border-white rounded-full p-2 pr-7 text-sm text-white relative hover:bg-white hover:text-black transition-all duration-300 overflow-hidden"
+                            >
                                 <span className="flex items-center transition-all duration-300 group-hover:translate-x-22">
                                     <ArrowRightIcon className="bg-white text-black rounded-full p-1 size-7 transition-all duration-300 group-hover:bg-black group-hover:text-white" />
                                 </span>
                                 <span className="ml-4 ransition-all duration-300 group-hover:-translate-x-9">Let`s Chat</span>
-                            </button>
+                            </Link>
                         </div>
 
                         {/* Mobile Menu Button */}

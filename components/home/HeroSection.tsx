@@ -20,7 +20,7 @@ const clients: ClientProps[] = [
 export default function HeroSection() {
     return (
         <React.Fragment>
-            <section className="min-h-screen bg-[url('/images/grid.png')] bg-contain bg-local relative">
+            <section id="" className="min-h-screen bg-[url('/images/grid.png')] bg-contain bg-local relative">
                 <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(3,0,25,0.7),rgba(37,124,255,0.5),rgba(3,0,25,0.7))]" />
                 <div className="absolute inset-0 flex justify-center items-center z-0">
                     <Image
@@ -145,7 +145,7 @@ export default function HeroSection() {
                     </div>
                 </div>
             </section>
-            <section className="pt-32 space-y-2">
+            <section className="pt-32 space-y-2 hidden">
                 <h3 className="text-white text-[14px] text-center hidden md:block">The One Who Trust Our Bold Work</h3>
                 <div className="flex justify-center">
                     <div className="relative flex h-[200px] max-w-[1440px] flex-row items-center justify-center overflow-hidden">

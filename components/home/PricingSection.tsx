@@ -6,6 +6,7 @@ import { Settings2Icon, TimerIcon, VideoIcon } from "lucide-react";
 import { HiBadgeCheck } from "react-icons/hi";
 import { ComponentType, SVGProps, useState } from "react";
 import Section from "../ui/section";
+import Link from "next/link";
 // import { Icon } from "@iconify/react";
 
 type NoteProps = {
@@ -16,7 +17,7 @@ type NoteProps = {
 type PricingProps = {
     id: number;
     label: string;
-    price: number;
+    price: number | string;
     isPopular: boolean;
     notes: NoteProps[];
     included: string[];
@@ -26,7 +27,7 @@ const pricing: PricingProps[] = [
     {
         id: 1,
         label: "Basic",
-        price: 349.00,
+        price: "X49.00",
         isPopular: false,
         notes: [
             { icon: TimerIcon, text: "1 Week Delivery" },
@@ -51,7 +52,7 @@ const pricing: PricingProps[] = [
     {
         id: 2,
         label: "Smart Website",
-        price: 499.00,
+        price: "X79.00",
         isPopular: true,
         notes: [
             { icon: TimerIcon, text: "1 Week Delivery" },
@@ -76,7 +77,7 @@ const pricing: PricingProps[] = [
     {
         id: 3,
         label: "Advanced Automated",
-        price: 799.00,
+        price: "X99.00",
         isPopular: false,
         notes: [
             { icon: TimerIcon, text: "1 Week Delivery" },
@@ -110,6 +111,7 @@ export default function PricingSection() {
         <Section
             id="Pricing"
             icon="solar:star-fall-bold"
+            index="pricing"
             title="Affordable Pricing Plans"
             subtitle="Choose the plan that best suits your needs and budget."
             className=""
@@ -125,8 +127,7 @@ export default function PricingSection() {
                 {pricing.map((item, index) => (
                     <div key={index} className={`flex items-center justify-center ${index == 0 ? 'lg:justify-end' : index == 2 ? 'lg:justify-start' : 'justify-center'}`}>
                         <div
-
-                            onClick={() => setIsViewMore(!isViewMore)}
+                            // onClick={() => setIsViewMore(!isViewMore)}
                             className="h-fit"
                         >
                             <Card className={`w-[330px] bg-red-500 group relative overflow-hidden cursor-pointer ${item.isPopular ? "border-gradient-animated" : "border-gradient-2"}`}>
@@ -214,7 +215,7 @@ export default function PricingSection() {
                                         <div className="w-fit space-y-8 flex flex-col">
                                             <label className="text-[16px] text-white font-lato">{item.label}</label>
                                             <div className="flex flex-col">
-                                                <h3 className="text-[32px] text-white font-peace">${item.price}</h3>
+                                                <h3 className="text-[32px] text-white font-peace">$ {item.price}</h3>
                                                 <ul className="mt-5 space-y-2.5">
                                                     {item.notes.map((note, i) => (
                                                         <li key={i} className="flex items-center space-x-4">
@@ -224,12 +225,13 @@ export default function PricingSection() {
                                                     ))}
                                                 </ul>
                                             </div>
-                                            <button
+                                            <Link
+                                                href="/contact-us"
                                                 className={`transition-all duration-600 rounded-full text-white p-[10px] w-[243px] font-lato h-[39px] flex items-center justify-center cursor-pointer
-                                            ${!item.isPopular ? "bg-[#5E45FF] group-hover:bg-[#FF38B6]" : "bg-gradient-to-l from-[#8B07FF] to-[#FF82D5]"}`}
+                                                ${!item.isPopular ? "bg-[#5E45FF] group-hover:bg-[#FF38B6]" : "bg-gradient-to-l from-[#8B07FF] to-[#FF82D5]"}`}
                                             >
                                                 Select Plan
-                                            </button>
+                                            </Link>
                                         </div>
                                         <div className="space-y-5">
                                             {/* <input type="checkbox" id="toggle" className="hidden peer" /> */}
@@ -265,7 +267,10 @@ export default function PricingSection() {
                                                     <span className="peer-checked:hidden">View more</span>
                                                     <span className="hidden peer-checked:inline">View less</span>
                                                 </label> */}
-                                                    <p className="text-white text-small font-lato">
+                                                    <p
+                                                        onClick={() => setIsViewMore(!isViewMore)}
+                                                        className="text-white text-small font-lato"
+                                                    >
                                                         {isViewMore ? "View less" : "View more"}
                                                     </p>
                                                 </div>

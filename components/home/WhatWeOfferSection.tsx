@@ -44,27 +44,15 @@ const whatWeOffer: WhatWeOfferProps[] = [
         url: ""
     },
     {
-        title: "Graphics Design",
-        description: "Social media kits, marketing materials, custom illustrations",
+        title: "AUTOMATION",
+        description: "Workflow setups, API integrations, task bots",
         number: "06",
         url: ""
     },
     {
-        title: "Graphics Design",
-        description: "Social media kits, marketing materials, custom illustrations",
+        title: "UI/UX DESIGN",
+        description: "Workshops, wireframes, user tests",
         number: "07",
-        url: ""
-    },
-    {
-        title: "Graphics Design",
-        description: "Social media kits, marketing materials, custom illustrations",
-        number: "08",
-        url: ""
-    },
-    {
-        title: "Graphics Design",
-        description: "Social media kits, marketing materials, custom illustrations",
-        number: "09",
         url: ""
     },
 ]
@@ -73,7 +61,7 @@ export default function WhatWeOfferSection() {
     const [isViewMore, setIsViewMore] = useState<boolean>(true);
     const displayedItems = whatWeOffer; //isViewMore ? whatWeOffer : whatWeOffer.slice(0, 5);
     return (
-        <section className="space-y-24 pt-32 bg-[#010314]">
+        <section id="services" className="space-y-24 pt-32 bg-[#010314]">
             <div className="text-white space-y-12">
                 <div className="flex items-center justify-center space-x-2">
                     <Image
@@ -103,7 +91,7 @@ export default function WhatWeOfferSection() {
 
             <div className="">
                 <input type="checkbox" id="toggle" className="hidden peer" />
-<div className="overflow-hidden max-h-[590px] peer-checked:max-h-[1200px] transition-all duration-500 bg-[url('/images/map.png')] md:bg-[url('/images/map-1.png')] bg-[length:731px_359px] md:bg-cover bg-no-repeat bg-center relative">
+                <div className="overflow-hidden max-h-[590px] peer-checked:max-h-[1200px] transition-all duration-500 bg-[url('/images/map.png')] bg-cover md:bg-[url('/images/map-1.png')] md:bg-auto bg-local bg-no-repeat bg-center relative">
 
                     {/* <div className="absolute w-full h-full bg-gradient-to-t from-[#030019] to-[#00060F]/50" /> */}
                     <div className="">

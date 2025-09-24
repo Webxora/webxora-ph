@@ -48,6 +48,7 @@ export default function OurWorksSection() {
         <Section
             id="Our Works"
             icon="solar:star-fall-bold"
+            index="projects"
             title="Selected Projects"
             subtitle="We guarantee websites that work for everyone, load fast, and follow modern standards."
             className="" //bg-[#010314]
