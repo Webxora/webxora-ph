@@ -3,6 +3,8 @@ import React from "react";
 import { Button } from "@/components//ui/button";
 import { PlayIcon } from "lucide-react";
 import { Marquee } from "@/components//ui/marquee";
+import { useRouter } from "next/navigation";
+import { useModalStore } from "@/store/useModalStore";
 
 type ClientProps = {
     image: string;
@@ -18,6 +20,8 @@ const clients: ClientProps[] = [
 ]
 
 export default function HeroSection() {
+    const router = useRouter();
+    const { open } = useModalStore();
     return (
         <React.Fragment>
             <section id="" className="min-h-screen bg-[url('/images/grid.png')] bg-contain bg-local relative">
@@ -126,6 +130,7 @@ export default function HeroSection() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-7 w-sm sm:w-xl md:w-2xl lg:w-1/2">
                             <div className="text-center md:text-right">
                                 <Button
+                                    onClick={open}
                                     className="h-[44px] w-[199px] md:w-[180px] rounded-full text-white"
                                     variant="style2"
                                 >
@@ -135,6 +140,7 @@ export default function HeroSection() {
                             </div>
                             <div className="text-center md:text-left">
                                 <Button
+                                    onClick={() => router.push("/#about")}
                                     className="h-[44px] w-[199px] md:w-[180px] rounded-full text-white"
                                     variant="outline"
                                 >

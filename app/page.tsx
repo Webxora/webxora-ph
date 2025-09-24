@@ -9,6 +9,7 @@ import WhatOurClientSaySection from "@/components/home/WhatOurClientSaySection";
 import WhatWeOfferSection from "@/components/home/WhatWeOfferSection";
 import WhyChooseUsSection from "@/components/home/WhyChooseUsSection";
 import YourTrustSection from "@/components/home/YourTrustSection";
+import ComingSoonModal from "@/components/ui/modal";
 import React from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 
@@ -25,8 +26,9 @@ export default function Home() {
         <PricingSection />
         <WhatOurClientSaySection />
         <ContactUsSection />
-      </ParallaxProvider>
 
+        <ComingSoonModal />
+      </ParallaxProvider>
     </React.Fragment>
   );
 }

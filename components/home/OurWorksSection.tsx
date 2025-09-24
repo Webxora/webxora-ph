@@ -16,7 +16,7 @@ const ourWorks: OurWorksProps[] = [
         title: "Gotham",
         description: "Lorem ipsum dolor sit amet consectetur. Ut nisi sagittis magna risus pharetra purus eleifend at lectus. Vivamus dignissim eu commodo suspendisse phasellus aenean. Dolor porttitor lacinia mi viverra turpis ut sit eget egestas.",
         image: "project-1.png",
-        url: "",
+        url: "https://gothamauto.com/",
         className: ""
     },
     {
@@ -30,14 +30,14 @@ const ourWorks: OurWorksProps[] = [
         title: "Preciso",
         description: "Lorem ipsum dolor sit amet consectetur. Ut nisi sagittis magna risus pharetra purus eleifend at lectus. Vivamus dignissim eu commodo suspendisse phasellus aenean. Dolor porttitor lacinia mi viverra turpis ut sit eget egestas.",
         image: "project-4.png",
-        url: "",
+        url: "https://preciso.webxora.com/",
         className: ""
     },
     {
         title: "Chemist Greenhouse",
         description: "Lorem ipsum dolor sit amet consectetur. Ut nisi sagittis magna risus pharetra purus eleifend at lectus. Vivamus dignissim eu commodo suspendisse phasellus aenean. Dolor porttitor lacinia mi viverra turpis ut sit eget egestas.",
         image: "project-2.png",
-        url: "",
+        url: "https://www.chemistgreenhouse.com.au/",
         className: "row-span-2 "
     },
 ]

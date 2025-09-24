@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { ComponentType, SVGProps } from "react";
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
-import { BsFacebook, BsInstagram, BsTiktok } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 // type PagesProps = {
 //     name: string;
@@ -44,16 +44,16 @@ type SocMedProps = {
 
 const socMed: SocMedProps[] = [
     {
-        icon: BsTiktok,
-        href: "/"
+        icon: BsLinkedin,
+        href: "https://www.linkedin.com/in/webxora-ph/"
     },
     {
         icon: BsFacebook,
-        href: "/"
+        href: "https://www.facebook.com/webxora"
     },
     {
         icon: BsInstagram,
-        href: "/"
+        href: "https://www.instagram.com/webxora/"
     }
 ]
 

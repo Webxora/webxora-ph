@@ -1,6 +1,7 @@
-body {
+body, html {
     background-color: #030019;
     font-family: var(--font-lato);
+     scroll-behavior: smooth;
 }
 
 /**
