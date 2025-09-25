@@ -14,22 +14,22 @@ type YourTrustProps = {
 const yourTrust: YourTrustProps[] = [
     {
         description: "We build fast-loading websites optimized for all devices and connection speeds. From image compression to clean code, WEBxora follows best practices to maximize speed and efficiency.",
-        image: "performance.png",
+        image: "performance.webp",
         className: ""
     },
     {
         description: "WebXora ensures every website is inclusive and usable by all, including people with disabilities. We follow global accessibility standards (like WCAG) to provide equal digital experiences.",
-        image: "accessability.png",
+        image: "accesability.webp",
         className: ""
     },
     {
         description: "WebXora adheres to industry-leading coding, design, and SEO standards in every project. This means your website is not only visually strong but technically sound, secure, and scalable.",
-        image: "best-practice.png",
+        image: "best-practice.webp",
         className: ""
     },
     {
         description: "We deliver clean, user-focused, and visually striking designs that align with your brand identity. Every interface is crafted to be both beautiful and intuitive, ensuring an engaging user experience across all platforms.",
-        image: "design-excellence.png",
+        image: "design.webp",
         className: ""
     },
 ]

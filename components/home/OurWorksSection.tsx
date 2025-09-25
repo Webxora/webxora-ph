@@ -14,28 +14,28 @@ type OurWorksProps = {
 const ourWorks: OurWorksProps[] = [
     {
         title: "Gotham",
-        description: "Lorem ipsum dolor sit amet consectetur. Ut nisi sagittis magna risus pharetra purus eleifend at lectus. Vivamus dignissim eu commodo suspendisse phasellus aenean. Dolor porttitor lacinia mi viverra turpis ut sit eget egestas.",
+        description: "Gotham Auto Works specializes in premium car care, from precision window tinting to ceramic coatings and detailing. Their services focus on enhancing style, protection, and performance for luxury vehicles. With meticulous craftsmanship, they ensure every car looks and performs at its best.",
         image: "gotham.webp",
         url: "https://gothamauto.com/",
         className: ""
     },
     {
         title: "Republic Of Gamers",
-        description: "Lorem ipsum dolor sit amet consectetur. Ut nisi sagittis magna risus pharetra purus eleifend at lectus. Vivamus dignissim eu commodo suspendisse phasellus aenean. Dolor porttitor lacinia mi viverra turpis ut sit eget egestas.",
+        description: "Republic of Gamers (ROG) is ASUS’s flagship gaming brand, known for delivering high-performance hardware and immersive experiences. Their ROG Swift PG Series monitors feature advanced technologies like NVIDIA G-SYNC for smooth, responsive gameplay. Built for serious gamers, ROG products combine cutting-edge design with world-class performance.",
         image: "rog.webp",
         url: "",
         className: "row-span-2"
     },
     {
         title: "Preciso",
-        description: "Lorem ipsum dolor sit amet consectetur. Ut nisi sagittis magna risus pharetra purus eleifend at lectus. Vivamus dignissim eu commodo suspendisse phasellus aenean. Dolor porttitor lacinia mi viverra turpis ut sit eget egestas.",
+        description: "The Preciso website is a modern coffee shop site designed to showcase its brand story and menu. With the tagline “Where Every Cup Tells a Story,” it highlights quality coffee, customer satisfaction, and a warm café experience. The clean design blends visuals and storytelling to create an inviting digital presence for coffee lovers.",
         image: "preciso.webp",
         url: "https://preciso.webxora.com/",
         className: ""
     },
     {
         title: "Chemist Greenhouse",
-        description: "Lorem ipsum dolor sit amet consectetur. Ut nisi sagittis magna risus pharetra purus eleifend at lectus. Vivamus dignissim eu commodo suspendisse phasellus aenean. Dolor porttitor lacinia mi viverra turpis ut sit eget egestas.",
+        description: "The Chemist Greenhouse website is an online pharmacy platform dedicated to health and wellness. It offers services like telehealth consultations, prescription management, and a wide range of healthcare products. With a focus on accessibility and holistic care, the site emphasizes that “Your Health is Our Service,” providing both traditional and natural treatment options to support everyday wellbeing.",
         image: "chemist.webp",
         url: "https://www.chemistgreenhouse.com.au/",
         className: "row-span-2 "
